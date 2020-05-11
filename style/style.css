@@ -1,0 +1,484 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*Reset para REMS - 62.5 = 10px*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(247, 240, 246);
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+.contenedor-small {
+    max-width: 100rem;
+    margin: 0 auto 0 auto;
+}
+
+
+/*Globales*/
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+.site-header {
+    height: 6rem;
+    border-bottom: 2px solid #EFC3E6;
+    margin-bottom: 1rem;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.barra h3 {
+    font-weight: 300;
+    margin-top: 1.5rem;
+}
+
+.barra h3:last-of-type {
+    font-weight: 400;
+}
+
+
+/* Contenido */
+
+select option:first-child {
+    display: none;
+}
+
+.registros {
+    margin: 0 auto;
+}
+
+.contenido {
+    height: 75.4vh;
+    width: 97%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 25% 74.3%;
+    column-gap: 1rem;
+}
+
+.datos {
+    max-height: 79%;
+    border-radius: 1.4rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .3);
+    background-color: #F9F5F9;
+    overflow: auto;
+}
+
+.datos h3 {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 1rem;
+    border-bottom: 1px solid #b3b3b3;
+    margin: 0 auto;
+    width: 90%;
+    font-weight: 400;
+}
+
+.datos .formulario {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.datos label {
+    display: block;
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+}
+
+.datos input {
+    line-height: 3rem;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    border: 1px solid #DAB2D2;
+    width: 25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: .4rem;
+}
+
+.buscador {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin-top: 2.3rem;
+    margin-bottom: 1.8rem;
+    overflow: auto;
+}
+
+.buscador input {
+    line-height: 3rem;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    border: 1px solid #DAB2D2;
+    width: 45rem;
+    margin-left: 26.5%;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: .4rem;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, .3);
+}
+
+.buscador h3 {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 1rem;
+    color: #000000b9;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.datos select {
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    border: 1px solid #DAB2D2;
+    width: 25rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: .4rem;
+}
+
+.datos input[type="file"] {
+    line-height: 2rem;
+    border-radius: 0;
+    border: none;
+}
+
+.datos textarea {
+    border-radius: .3rem;
+    border: 1px solid #DAB2D2;
+    width: 80%;
+    resize: none;
+    height: 8rem;
+    margin-bottom: 1rem;
+    margin-top: .4rem;
+    font-size: 1.2rem;
+}
+
+.datos .botones {
+    margin-top: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.datos .botones input {
+    background-color: #EFC3E6;
+    margin-top: 1rem;
+    width: 10rem;
+    line-height: 3rem;
+    font-weight: 500;
+    transition: .3s ease-in all;
+}
+
+.datos .botones button {
+    background-color: #EFC3E6;
+    width: 10rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 500;
+    transition: .3s ease-in all;
+}
+
+.datos .botones input:hover {
+    cursor: pointer;
+    border: 2px solid #EFC3E6;
+    background-color: #ffffff;
+}
+
+.datos .botones button:hover {
+    cursor: pointer;
+    border: 2px solid #EFC3E6;
+    background-color: #ffffff;
+}
+
+.mostrar {
+    max-height: 79%;
+    border-radius: 1.4rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .3);
+    background-color: #F9F5F9;
+}
+
+.mostrar h3 {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 1rem;
+    border-bottom: 1px solid #b3b3b3;
+    margin: 0 auto;
+    width: 90%;
+    font-weight: 400;
+}
+
+.lista-alumn {
+    height: 79%;
+    margin-top: 2rem;
+    text-align: center;
+    overflow: auto;
+    max-height: 52rem;
+}
+
+.lista-alumn table {
+    max-height: 79%;
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.datos-tabla {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1rem;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.datos-tabla thead tr {
+    background-color: #003051;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.datos-tabla th,
+.datos-tabla td {
+    padding: 12px 15px;
+}
+
+.datos-tabla tbody tr:hover,
+.datos-tabla tbody tr:nth-of-type(even):hover {
+    background-color: #A2D0FF;
+    cursor: pointer;
+}
+
+.datos-tabla tbody tr td img {
+    max-width: 5rem;
+}
+
+.datos-tabla tbody tr:nth-of-type(even) {
+    background-color: #D0E7FF;
+}
+
+.datos-tabla tbody tr:last-of-type {
+    border-bottom: 2px solid #2ecc71;
+}
+
+.lista .lista-alumn table tr {
+    min-height: 3rem;
+    align-items: center;
+}
+
+.lista-alumn table td .btn-editar {
+    color: #ffffff;
+    padding: .5rem;
+    border-radius: .6rem;
+    background-color: #A1C79A;
+    transition: .4s ease-in all;
+}
+
+.lista-alumn table td .btn-editar:hover {
+    color: #008f39;
+    border: 1px solid #008f39;
+    background-color: #ffffff;
+}
+
+.lista-alumn table td .btn-borrar {
+    color: #ffffff;
+    padding: .5rem;
+    border-radius: .6rem;
+    /*background-image: url(../imagenes/delete.png);*/
+    background-color: #D67373;
+    transition: .4s ease-in all;
+}
+
+.lista-alumn table td .btn-borrar:hover {
+    color: #D90429;
+    border: 1PX solid #D90429;
+    background-color: #ffffff;
+}
+
+.lista-alumn table tr td a {
+    margin-right: 1rem;
+}
+
+.lista-alumn table tr td a:last-of-type {
+    margin-right: 0;
+}
+
+tbody tr td:nth-child(7) {
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+.site-footer {
+    height: 7.4rem;
+    border: 1px solid;
+    background-color: #000000;
+}
+
+.site-footer .footer-barra {
+    color: #F8F3F7;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-barra h3 {
+    font-weight: 700;
+}
+
+.site-footer .iconos {
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconos i {
+    font-size: 3.5rem;
+    transition: .4s ease-in all;
+}
+
+.iconos i:hover {
+    color: #DAB2D2;
+    cursor: pointer;
+}
+
+
+/* Estilos Editar */
+
+.contenido-editar {
+    max-height: 76.3vh;
+    margin-bottom: 4rem;
+    overflow: auto;
+}
+
+.datos-editar {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .3);
+    border-radius: 2rem;
+    background-color: #F9F5F9;
+    padding: 2rem;
+}
+
+.datos-editar .formulario {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.datos-editar label {
+    display: block;
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+}
+
+.datos-editar input {
+    line-height: 3rem;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    border: 1px solid #DAB2D2;
+    width: 80%;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: .4rem;
+}
+
+.datos-editar select {
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    border: 1px solid #DAB2D2;
+    width: 80%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: .4rem;
+}
+
+.datos-editar input[type="file"] {
+    line-height: 2rem;
+    border-radius: 0;
+    border: none;
+}
+
+.datos-editar textarea {
+    border-radius: .3rem;
+    border: 1px solid #DAB2D2;
+    width: 80%;
+    resize: none;
+    height: 8rem;
+    margin-bottom: 1rem;
+    margin-top: .4rem;
+    font-size: 1.2rem;
+}
+
+.datos-editar .botones {
+    margin-top: 2rem;
+    align-items: center;
+    display: block;
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.datos-editar .botones input {
+    background-color: #EFC3E6;
+    margin-top: 1rem;
+    width: 10rem;
+    line-height: 3rem;
+    font-weight: 500;
+    transition: .3s ease-in all;
+}
+
+.datos-editar .botones button {
+    background-color: #EFC3E6;
+    width: 10rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 500;
+    transition: .3s ease-in all;
+}
+
+.datos-editar .botones input:hover {
+    cursor: pointer;
+    border: 2px solid #EFC3E6;
+    background-color: #ffffff;
+}
